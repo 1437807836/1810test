@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="layout">
+                <div id="main_contanier" class="n-frame device-frame reg_frame">
+                    <!-- logo 图层 -->
+                    <div class="external_logo_area">
+                        <a class="milogo" href="javascript:;"></a>
+                    </div>
+                    <!-- 标题层 -->
+                    <div class="title-item t_c">
+                        <h4 class="title_big30">注册小米帐号</h4>
+                    </div>
+                    <!-- 注册层 -->
+                    <div>
+                        <!-- 注册表单 -->
+                        <form action="../php/reg.php" method="post" id="form1">
+                            <div class="regbox">
+                                <div class="phone_step1">
+                                    <div class="listwrap select-regions">
+                                        <!-- 用户名 -->
+                                        <label class="r-phone" for="username">
+                                            <input type="text" class="r-item-count tel" name="tel"
+                                                placeholder="邮箱/手机号码/小米ID">
+                                        </label>
+                                        <span class="error-con telspan" style="margin-left:15px;"></span>
+                                        <!-- 密码 -->
+                                        <label for="password" class="r-pwd">
+                                            <input type="password" class="r-item-count" placeholder="密码" name="pass">
+                                        </label>
+                                        <span class="error-con pwdspan" style="padding-bottom: 5px; height:19px; display: block;margin-left:15px;"></span>
+                                        <!-- 验证密码 -->
+                                        <label for="repass" class="r-true">
+                                            <input type="repass" class="r-item-count" placeholder="确认密码">
+                                        </label>
+                                        <span class="error-con respan" style="padding-bottom: 5px; height:19px; display:block;margin-left:15px;"></span>
+                                        <!-- 错误提示 -->
+                                        <div class="error" style="display:block">
+                                            <!-- <em class="icon_error">用户名或者密码不正确</em> -->
+                                            <!-- <span class="error-con"></span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register">
+                                    <input type="submit" value="立即注册" name="submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- 注册底部信息 -->
+                <div class="privacy_box">
+                    <div class="msg">
+                        <label class="n_checked select-privacy now">
+                            <i class="icon_select"></i>注册帐号即表示您同意并愿意遵守小米
+                            <a href="https://static.account.xiaomi.com/html/agreement/account/cn.html"
+                                class="inspect_link agreement_link" title="用户协议" target="_blank">用户协议</a>
+                            和
+                            <a href="https://www.mi.com/about/privacy/" class="inspect_link privacy_link" title=" 隐私政策 "
+                                target="_blank"> 隐私政策</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="reg-footer">
+        <div class="foot-top clear">
+            <ul class="clear">
+                <li><a href="javascript:;">简体</a>
+                    |</li>
+                <li><a href="javascript:;">繁体</a>
+                    |</li>
+                <li><a href="javascript:;">English</a>
+                    |</li>
+                <li>
+                    <a href="javascript:;">常见问题</a>
+                    |</li>
+            </ul>
+        </div>
+        <div class="foot-bot">
+            <p class="nf-intro"><span>小米公司版权所有-京ICP备10046444-
+                    <a class="beianlink beian-record-link" target="_blank"
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134">
+                        <span>
+                            <img
+                                src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png">
+                        </span>京公网安备11010802020134号
+                    </a>-京ICP证110507号</span>
+            </p>
+        </div>
+    </div>
+    <script src="script/js/jquery.js"></script>
+    <script src="script/js/register.js"></script>
+</body>
+
+</html>

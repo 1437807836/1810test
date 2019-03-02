@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+.banner-nav{
+    width: 100%; 
+    height: 358px;
+    background:#ccc;
+}
+.nav-container{
+    width: 221px;
+    height: 338px;
+    background-color: #845f3f;
+    position: relative;
+    padding: 10px 0;
+    /*---------------导航左边---------*/ 
+    .nav-list{
+        overflow: hidden; 
+       .nav-item{
+          width: 165px;
+          height: 37px;
+          line-height: 37px;
+          font-size: 14px;
+          color: white;
+          padding: 0 30px;
+          overflow: hidden;
+          a{
+              color: white;
+          }
+      }  
+    }    
+}
+/*-------banner图-----*/ 
+.banner-box{
+    background-color: aqua;
+    .m-banner{
+        width: 859px;
+        height: 358px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 2;
+        // 当行栏下面的图片
+        .swip-banner{
+            // overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            box-sizing: border-box;
+            .img-box{
+				position: absolute;
+				left:0px;
+				top:0px;
+                width: 859px;
+                height: 100%;
+            }
+            .img-box.active{
+                background: orange;
+            }
+            img{
+                height: 358px;
+                width: 100%;
+                display: block;
+            }
+
+        }
+        //  五个小按钮
+        .swip-button{
+            width: 100%;
+            left: 0;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            z-index: 10;
+            .swip-bullet{
+                display: inline-block;
+                width: 8px;
+                cursor: pointer;
+                height: 8px;
+                background: #fff;
+                border-radius: 50%;
+            }
+            /* js 按钮切换时候的样式。*/ 
+            .swip-bullet-active{
+                background: #a7936e;
+                box-shadow: 0 0 0 4px;
+                border: none;
+                border-radius: 500px;
+            }
+        }
+        // 左右两个按钮
+        .swiper-button-next, .swiper-button-prev {
+            // 控制两者相同的上下定位，左右不一样。
+            position: absolute;
+            top: 50%;
+            margin-top: -22px;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .swiper-button-next {
+            right: 10px;
+        }
+        .swiper-button-prev {
+            left: 10px;
+        }
+    }
+
+}
+.m-icons-next-hover {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1840px;
+}
+.m-icons-forward-hover {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1924px;
+}
+
+/*banner 下面的部分*/ 
+.p-1{ 
+    width: 100%;
+    .p-container{
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        border-bottom:1px solid rgb(231, 231, 231); 
+        .p-nav-ul{
+            list-style: none;
+            height: 148px;
+            padding-bottom: 10px;
+            .p-nav-li{
+                width: 130px;
+                height: 120px;
+                margin-right: 85px;
+                cursor: pointer;
+            }
+            .p-nav-li:last-child{
+                margin-right: 0;
+            }
+        }
+        .image-container{
+            display: inline-block;
+            padding: 25px 25px 15px;
+            width: 80px;
+            height: 80px;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        p{
+            color: rgb(85, 86, 102);
+            width: 130px;
+            margin-top: 4px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

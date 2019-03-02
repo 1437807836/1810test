@@ -1,0 +1,31 @@
+.clear::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.clear::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.float-r{
+    float: right;
+}
+.f1{ 
+    float: left;
+}
+.img{
+    vertical-align: middle;
+    border: none;
+}
+.m-icons{
+    display: inline-block;
+    background: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png);
+}
+@mixin  ellipsis($wValue,$hValue) {
+    width: $wValue;
+    height: $hValue;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

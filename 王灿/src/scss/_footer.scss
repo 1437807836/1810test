@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/**/ 
+.m-footer{
+    margin-top: 60px;
+    padding: 45px 0;
+    height: 45px;
+    width: 100%;
+    line-height: 23px;
+    border-top: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: #666;
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+    .m-f-logo {
+        img {
+            width: 123px;
+            height: 45px;
+            margin-right: 25px;
+        } 
+    }
+    // 为了让定位的图片显示，padding右边值大点
+    .f-info {
+        position: relative;
+        padding-right: 138px;
+        font-size: 12px;
+        // 图标定位在最右边
+        .f-icons {
+            position: absolute;
+            top: 4px;
+            right: 0;
+            padding-left: 14px;
+            img{
+                width: 100px;
+            }
+        }
+    }
+    
+}

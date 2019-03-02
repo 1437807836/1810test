@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="layout">
+                <!-- 登录框 -->
+                <div id="main_contanier" class="n-frame device-frame reg_frame" style="display:block;">
+                    <!-- 点击弹出二维码 层 -->
+                    <div class="login-display">
+                        <a href="javascript:;" class="ercode">
+
+                        </a>
+                    </div>
+                    <!-- logo 图层 -->
+                    <div class="external_logo_area">
+                        <a class="milogo" href="javascript:;"></a>
+                    </div>
+                    <!-- 标题层 -->
+                    <div class="title-item t_c">
+                        <h4 class="title_big30">小米帐号登录</h4>
+                    </div>
+                    <!--登录 -->
+                    <div>
+                        <!-- 注册表单 -->
+                        <div class="login-box">
+                            <!--   手机号 -->
+                            <label class="l-phone" for="">
+                                <input type="text" class="item-count" name="telphone" placeholder="邮箱/手机号码/小米ID">
+                            </label>
+                            <!-- 密码 -->
+                            <label for="" class="l-pwd">
+                                <input type="password" class="item-count" name="password" placeholder="密码">
+                            </label>
+                            <!-- 错误提示  -->
+                            <div class="error" style="display:block">
+                                <em class="icon_error"></em>
+                                <span class="error-con">用户名不正确</span>
+                            </div>
+                            <!-- 注册按钮 -->
+                            <div class="loginer">
+                                <input type="submit" value="登录" name="submit">
+                            </div>
+                            <!-- 注册底部信息 -->
+                            <div class="other-way">
+                                <!-- 忘记密码 -->
+                                <div class="forget">
+                                    <div class="custom">
+                                        <a href="javascriput:;" class="out-link">忘记密码</a>
+                                        <span>|</span>
+                                        <a href="javascriput:;" class="out-link">立即注册</a>
+                                    </div>
+                                </div>
+                                <!-- 其他方式登录 -->
+                                <div class="otherWays">
+                                    <fieldset>
+                                        <legend>其他方式登录</legend>
+                                    </fieldset>
+                                    <div class="otherlink">
+                                        <a href="javascript:;" class="icon_type google"></a>
+                                        <a href="javascript:;" class="icon_type facebook"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 点击二维码出现的界面 -->
+                <div class="login-code" style="width:854px; height:620px; display:none">
+                    <!--关闭按钮  -->
+                    <a href="" class="close-btn">
+                        <span class="icon_code"></span>
+                    </a>
+                    <!-- 二维码主框 -->
+                    <div class="ercode-box">
+                        <div class="code-header">
+                            <h3 class="code-tit">小米帐号扫码登录</h3>
+                            <p>请打开「设置 > 小米帐号 > 右上角扫一扫」扫码登录</p>
+                        </div>
+                        <div class="code-ifreme" >
+                            <img src="img/canvas.png" alt="" width="270px; height:270px; ">
+                            <!-- <iframe style="background:#fff;"
+                                src="/pass/lp?sid=miotstore&amp;_bannerBiz=miotstore&amp;callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1550506207.576163916%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&amp;_qrsize=270"
+                                id="qriframe" scrolling="no"
+                                sandbox="allow-scripts allow-same-origin allow-top-navigation allow-modals" width="270"
+                                height="270" frameborder="0"></iframe> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reg-footer">
+        <div class="foot-top clear">
+            <ul class="clear">
+                <li>
+                    <a href="javascript:;">中文(简体)</a>
+                </li>
+                <li>
+                    <a href="javascript:;">English</a>
+                </li>
+                <li>
+                    <button id="show-more-lang" class="show_more_lang show-more-lang">…</button>
+                </li>
+                <li>
+                    <a href="javascript:;">常见问题</a>
+                </li>
+                <li>
+                    <a href="javascript:;">隐私政策</a>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-bot">
+            <p class="nf-intro"><span>小米公司版权所有</p>
+        </div>
+    </div>
+    <script src="script/js/jquery.js"></script>
+    <script src="script/js/cookie.js"></script>
+    <script src="script/js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+@import "mixin";
+.r-phone {
+    width: 356px;
+    border: 1px solid #e0e0e0;
+    color: #4a4a4a;
+    outline: 0;
+    display: block;
+    margin-bottom: 14px;
+}
+.r-item-count {
+    border: 0;
+    outline: 0;
+    width: 326px;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+}
+.r-pwd,.r-true {
+    width: 356px;
+    border: 1px solid #e0e0e0;
+    display: block;
+    margin-bottom: 14px;
+}
+body{
+    color: #666666;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.wrap {
+    width: 854px;
+    margin: 0 auto;
+    height: 638px;
+    padding-bottom: 80px;
+}
+.layout {
+    width: 854px;
+    padding-bottom: 10px;
+}
+.device-frame {
+    padding: 34px 34px 30px;
+    background: #fff;
+}
+// #main_container{
+//     background: #fff;
+// }
+
+/*上面的logo-----*/ 
+.external_logo_area{
+    width: 100%;
+        .milogo {
+            width: 49px;
+            height: 48px;
+            margin: 0 auto;
+            display: block;
+            cursor: default;
+            background-image: url(https://account.xiaomi.com/static/res/28f08d0/account-static/respassport/acc-2014/img/milogo.png);
+        }
+}
+// 标题
+ .title-item{
+     text-align: center; 
+    .title_big30 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+ }
+ 
+
+
+// 主要的盒子
+/*中间注册的盒子*/ 
+.regbox{
+    width: 332px;
+    // padding: 30px 0;
+    padding-bottom: 30px;
+    line-height: 20px;
+    margin: 0 auto;
+    .tit_normal {
+        padding-bottom: 5px;
+        color: #333;
+        font-weight: normal;
+    }
+}
+
+// 注册城市的列表
+.tits {
+    height: 40px;
+    padding-left: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #e8e8e8;
+    color: #555;
+    cursor: pointer;
+     p {
+        width: 275px;
+        border-right: 1px solid #e8e8e8;
+        cursor: pointer;
+    }
+}
+.listwrap {
+    padding-bottom: 15px;
+    position: relative;
+}
+.icon_cirarr {
+    background: url(https://account.xiaomi.com/static/res/0eeaaed/passport/oauth/images/icon_user.png);
+    width: 16px;
+    height: 16px;
+    margin: 11px 12px 0 12px;
+}
+// 编辑手机号码
+.listwrap_inside_panel {
+    .tits{
+    width: 54px;
+    text-align: center;
+    padding: 0 9px;
+    }
+    p {
+        width: auto;
+        border-right: 0 none;
+    }
+    .inputbg{
+        padding-bottom: 15px;
+        input {
+            background: none;
+            border: none;
+            height: 20px;
+            line-height: 20px;
+            display: inline-block;
+            padding: 8px;
+            width: 236px;
+        
+        }
+    }
+    .labelbox {
+        // 为了让他们之间的边框挤在一起看不见
+        margin-left: -1px;
+        display: inline-block;
+        position: relative;
+        z-index: 3;
+        outline: none;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #e8e8e8;
+    }
+}
+.icon_arrow{
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9d9d9d transparent transparent transparent;
+    position: relative;
+    top: -27px;
+
+    
+}
+
+// 注册按钮
+.register input{
+    width: 330px;
+    height: 42px;  
+    color: white;  
+    background-color: #ff6700;
+    border: none;
+    outline: none;
+}
+// 
+.phone-tip{
+    display: block;
+    position: relative;
+    left: -70px;
+    margin-top: 10px;
+    color:#f66;
+}
+
+ 
+
+
+// 成功注册手机后
+.region_tip_text {
+    // 设一个负的margin，让其向上移动一点
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.icon_error{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RThERTYwMzA1REI3MTFFNDg1NkRDMzZGRjlFNjlEMzMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RThERTYwMzE1REI3MTFFNDg1NkRDMzZGRjlFNjlEMzMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFOERFNjAyRTVEQjcxMUU0ODU2REMzNkZGOUU2OUQzMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFOERFNjAyRjVEQjcxMUU0ODU2REMzNkZGOUU2OUQzMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhTWU2QAAADRSURBVHjaYvyfb8uABESAuAiIfYBYDSp2A4g3AfEkIH4DU8iIpDEYiOcCMT8DdvAJiJOAeC2Iw4SkaTUeTSDAB1UTDNMoCsTzQLajKJtwCIJRASNUrRhIYy7UNGIBSG0BSKMfA+nAB6RRgwyN6kwM5IFfLNB40seQKrDDp/EeEzRyMQH2UIWBrSCNU6CRSywAqZ0AcuoraIpYjRKX2J36H6r2FSxwQMkoDIg/47EJJBeKnuRAYA0QKwFxOxBfAeLfQPwViM8DcQtUbi1MMUCAAQBgriw0RAfMMAAAAABJRU5ErkJggg==);
+    width: 14px;
+    height: 14px;
+    margin: -1px 5px 0 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*中间注册底部的盒子*/ 
+.privacy_box{
+    padding-top: 40px;
+    text-align: center;
+    .icon_select{
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAk5JREFUOBGVlctrU1EQxn/3tqZVKxQRCirdWRRX4sKuK7j1GYoLN4JYULT6FwiuFSOiEf+A+iq6FwV3uhIXWqmugigVKT5iTUKa6zfn5CQ3MUnTgXPPa+Y7c+bMNzeihyRHGGWAcSJGnFpCkVUK0VN+dDOLOm0kx9lNhhmBTartFODWOuCyAD+rvaJCPprnQ7t9C2ACMdPMCuys2oRmCKxVpERNrcKi2l2Nb0WPNKpLQz3JCiLmHkOcYJhNQaFnX1YIysxzn9MCsmOcD94m5ryAjvUNZlZDim2GrLuVR/GAyVH2uGuawnrFbqMQubjL1qJkJ81occKN1/rEg5Bpi4jZ2iNKYpcagxxIXb475OgOuPIern6UpYCDmFvKCMOKXZ751Ajbvo8GWudbxuDyCxjbBd8+6QmqzX17WsNQzsbybHMjz4LK/izc/AVTF/zKyDaBPReYolJ4A7cPB81mb7kqAqT8bu6xIiJs2AjTOeWhPJ08Bdv3wpd3kDsEf7sSRf7V+EPCcgoOFp7B3Dm/lL0G4/tgaRGuH4Ti9xbVxsQwRM3YuOnoZAxIy8s78PCSVrTx86vApuD3UlqjOTZbT8mCY0pykhvKposK6v+SUWpWS62P0K61qoUVctEcsz4PS+KkcbOTVIq9wczG8zpvQwcYPWHBEb2kc9YrxmcViVB5vIcG8kDXLvNYTS71KeaAFQdVnGDRSBurFkmNM5R4K4X+y5ccCZXGQN2jBPTQu2IxLNBuBbbKa3mWd6EKRvW+I2DQafwCjE0mlrNr/AL+AbcOsj+c24+/AAAAAElFTkSuQmCC);
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        position: relative;
+        top: 4px;
+        display: inline-block;
+    }
+}
+.now{
+    color: #9d9d9d;
+    a{
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+/*注册底部*/ 
+.reg-footer{
+    width: 100%;
+    height: 88px;
+    text-align: center;
+}
+.foot-top{
+    width: 100%;
+    text-align: center;
+    ul{
+        // width: 854px;
+        text-align: center;
+        margin: 0 auto;
+        
+        a{
+            color: #757577;
+            text-decoration: none;
+            padding: 0 10px;
+            display: inline-block;
+        }
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+}
+.foot-bot{
+    width: 100%;
+    p{
+        a{
+            color: #757575;
+            text-decoration: none;
+        }
+    }
+    
+}

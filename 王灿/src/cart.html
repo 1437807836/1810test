@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="top">
+
+    </div>
+    <div class="underline">
+        <div class="wrap">
+            <div id="header">
+            </div>
+        </div>
+    </div>
+    <!-- 购物车主体 -->
+    <div class="cart">
+        <!-- 首页 导航 -->
+        <div class="container">
+            <div class="navigator">
+                <span>
+                    <a href="javascript:;">首页</a>
+                </span>
+                <span>
+                    <a href="javascript:;">购物车</a>
+                </span>
+            </div>
+        </div>
+        <!-- 空购物车的时候的界面 -->
+        <div class="container">
+            <div class="no-good-container" style="display:block;">
+                <!-- 无--购物车图标 -->
+                <div class="m-exception m-no-cart">
+                    <div class="e-img"></div>
+                    <p class="e-info">购物车还是空的</p>
+                </div>
+                <!-- 去逛逛 -->
+                <div class="btn-wrap">
+                    <a class="m-btn-default m-btns m-btn-gray" href="javascript:;">继续逛</a>
+                </div>
+            </div>
+        </div>
+        <!-- 有购物车的时候的界面 -->
+        <div class="lister container" style="display:none" >
+            <div class="has-good-container container">
+                <div id="good-title cart-checkbox" class="title">
+                    <input class="allsel m-icons m-icons-check-active select-icon" type="checkbox">
+                    <span class="all-txt">全选</span>
+                    <span class="product">商品信息</span>
+                    <span class="price">单价</span>
+                    <span class="num">数量</span>
+                    <span class="total">金额</span>
+                    <span class="edit">操作</span>
+                </div>
+                <div class="clonebox" style="display:none">
+                    <!-- 列表信息 -->
+                    <div id="good-list" class="cart-list">
+                        <div class="clone-box">
+                            <!-- 商品列表信息                                  -->
+                            <div class="list-info cart-checkbox">
+                                <input class="m-icons m-icons-check-active select-icon" type="checkbox">
+                                <span class="name">小米</span>
+                                <div class="post">
+                                    <span>
+                                        <span class="posting">!</span>已免运费
+                                    </span>
+                                </div>
+
+                            </div>
+                            <!--   商品内容                                    -->
+                            <div class="good-item-container">
+                                <div class="cart-good-item clear">
+                                    <!-- 选择框 -->
+                                    <div class="select cart-checkbox f1">
+                                        <input class="m-icons m-icons-check-active select-icon" type="checkbox">
+                                    </div>
+                                    <!-- 图片 -->
+                                    <div class="image f1" data-src="/detail?gid=102901&amp;pid=14652"
+                                        data-target="_blank">
+                                        <img class=""
+                                            src="http://img.youpin.mi-img.com/800_pic/102010_11007_yc8sczvo9bll.png@base@tag=imgScale&amp;h=350&amp;w=350&amp;et=1&amp;eth=480&amp;etw=480&amp;etc=FFFFFF?t=webp"
+                                            data-src="http://img.youpin.mi-img.com/800_pic/102010_11007_yc8sczvo9bll.png@base@tag=imgScale&amp;h=350&amp;w=350&amp;et=1&amp;eth=480&amp;etw=480&amp;etc=FFFFFF?t=webp"
+                                            alt="小米米家智能摄像机云台版 白色">
+                                    </div>
+                                    <!-- 商品名称 -->
+                                    <div class="name f1" data-src="/detail?gid=102901&amp;pid=14652"
+                                        data-target="_blank">
+                                        <div class="vertical-wrap">
+                                            <p class="good-name brown-hover">小米米家智能摄像机云台版 白色</p>
+                                        </div>
+                                    </div>
+                                    <!-- 商品价格 -->
+                                    <div class="price f1">
+                                        <span>￥199</span>
+                                    </div>
+                                    <!-- 商品数量 -->
+                                    <div class="num f1">
+                                        <div class="num-reduce-add" style="width: 134px;">
+                                            <a class="m-icons m-icons-reduce minus-plus" data-src=""
+                                                href="javascript:;"></a>
+                                            <span class="txt" style="width: 70px;">1</span>
+                                            <a class="m-icons m-icons-add-active minus-plus" data-src=""
+                                                href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <!-- 总价 -->
+                                    <div class="subtotal f1">
+                                        <span>￥199</span>
+                                    </div>
+                                    <!-- 删除物品 -->
+                                    <div class="del f1">
+                                        <a class="m-icons m-icons-close-hover icon" data-src="" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品列表 -->
+
+
+            </div>
+            <!--总价 -->
+            <div class="cart-total">
+                <!-- 全选 -->
+                <div class="ico f1">
+                    <input class="allsel m-icons m-icons-check-active select-icon" type="checkbox">
+                    <span class="select-text">全选</span>
+                    已选
+                    <span class="already-select">3</span>
+                    件
+                </div>
+                <!-- 合计 -->
+                <div class="totol-price-con no-reduce">
+                    <span class="total-after-prefer">
+                        <span>合计：</span>
+                        ￥1038.00
+                    </span>
+                </div>
+                <!-- 去结算 -->
+                <span class="checkout  fr">去结算</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- 侧边栏 -->
+    <div class="m-sidebar">
+    </div>
+    <script src="script/js/jquery.js"></script>
+    <script>
+        $('.top').load('index.html .top');
+        $('#header').load('index.html .header');
+        $('.m-sidebar').load('index.html .sidebar');  
+    </script>
+    <script src="script/js/cookie.js"></script>
+    <script src="script/js/cart.js"></script>
+</body>
+
+</html>

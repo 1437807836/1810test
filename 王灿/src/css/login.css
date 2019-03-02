@@ -1,0 +1,344 @@
+@charset "UTF-8";
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-r {
+  float: right;
+}
+
+.f1 {
+  float: left;
+}
+
+.img {
+  vertical-align: middle;
+  border: none;
+}
+
+.m-icons {
+  display: inline-block;
+  background: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png);
+}
+
+body {
+  color: #666666;
+  font-size: 14px;
+  background: #f9f9f9;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+.wrap {
+  width: 854px;
+  margin: 0 auto;
+  height: 638px;
+}
+
+.layout {
+  width: 854px;
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+.device-frame {
+  padding: 34px 34px 30px;
+  padding-bottom: 0;
+  position: relative;
+  display: none;
+}
+
+.ercode {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: .3;
+  background: url(https://account.xiaomi.com/static/res/f234829/account-static/respassport/acc-2014/img/sprite_login.gif) no-repeat;
+  color: #757575;
+}
+.ercode:hover {
+  opacity: 1;
+}
+
+.login-code {
+  background: #fff;
+  position: relative;
+  z-index: 98;
+  margin: 0 auto;
+  color: #757575;
+}
+
+/*放置二维码的盒子*/
+.ercode-box {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  margin-top: -200px;
+  margin-left: -300px;
+}
+.ercode-box .code-header {
+  padding-bottom: 50px;
+}
+.ercode-box .code-tit {
+  text-align: center;
+  font-size: 30px;
+  color: #ff6700;
+  font-weight: normal;
+}
+.ercode-box .code-iframe iframer {
+  background: #fff;
+}
+
+.close-btn {
+  columns: #757575;
+  background-color: #bdbdbd;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.close-btn .icon_code {
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin: 8px auto 0;
+  cursor: pointer;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAABGdBTUEAALGPC/xhBQAAAJxJREFUGBl1kLEOgkAQRA9pVUKihTR2FBREPwD/v6ehsDYhoTBWVsAb5AguMMm7I7sz3O0FzrkYOnjDlg409ruxm7MrtKaI4g30w0EyPsAGZCzgBH+ygYUxnNm/fH8gAx2ZQgUNDJqbVVBAxjs84QWT/IC+oKOvUEICdgZKP9k72hm8z1mjbywCRzqrzzMmFFD/HLBcoIUatqR3jnolNxObIsWRIwAAAABJRU5ErkJggg==) no-repeat center center;
+}
+
+/*上面的logo-----*/
+.external_logo_area {
+  width: 100%;
+}
+.external_logo_area .milogo {
+  width: 49px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+  cursor: default;
+  background-image: url(https://account.xiaomi.com/static/res/28f08d0/account-static/respassport/acc-2014/img/milogo.png);
+}
+
+.title-item {
+  text-align: center;
+}
+.title-item .title_big30 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/*中间注册的盒子*/
+.login-box {
+  width: 332px;
+  padding-bottom: 30px;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.login-box .tit_normal {
+  padding-bottom: 5px;
+  color: #333;
+  font-weight: normal;
+}
+
+.tits {
+  height: 40px;
+  padding-left: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #e8e8e8;
+  color: #555;
+  cursor: pointer;
+}
+.tits p {
+  width: 275px;
+  border-right: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+
+.listwrap {
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.icon_cirarr {
+  background: url(https://account.xiaomi.com/static/res/0eeaaed/passport/oauth/images/icon_user.png);
+  width: 16px;
+  height: 16px;
+  margin: 11px 12px 0 12px;
+}
+
+.l-phone {
+  width: 356px;
+  border: 1px solid #e0e0e0;
+  color: #4a4a4a;
+  outline: 0;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.l-pwd {
+  width: 356px;
+  border: 1px solid #e0e0e0;
+  display: block;
+}
+
+.item-count {
+  border: 0;
+  outline: 0;
+  width: 326px;
+  height: 22px;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  display: block;
+}
+
+.icon_arrow {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #9d9d9d transparent transparent transparent;
+  position: relative;
+  top: -27px;
+}
+
+.error {
+  margin-top: 15px;
+}
+
+.loginer input {
+  margin-top: 15px;
+  width: 358px;
+  height: 50px;
+  color: white;
+  background-color: #ef5b00;
+  border: none;
+  outline: none;
+}
+
+.phone-tip {
+  display: block;
+  position: relative;
+  left: -70px;
+  margin-top: 10px;
+  color: #f66;
+}
+
+.forget {
+  text-align: center;
+}
+.forget .custom {
+  padding-top: 30px;
+}
+.forget a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
+}
+
+.otherWays {
+  padding-top: 50px;
+  text-align: center;
+  color: #757575;
+}
+.otherWays fieldset {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+.otherWays a {
+  display: inline-block;
+}
+
+.icon_type {
+  margin: 0 15px;
+  background: url(https://account.xiaomi.com/static/res/6f579dd/account-static/respassport/acc-2014/img/sgp_icons_type.png);
+  width: 30px;
+  height: 30px;
+}
+
+.google {
+  background-position: 30px 0;
+}
+
+.facebook {
+  background-position: 0 0;
+}
+
+.icon_error {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RThERTYwMzA1REI3MTFFNDg1NkRDMzZGRjlFNjlEMzMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RThERTYwMzE1REI3MTFFNDg1NkRDMzZGRjlFNjlEMzMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFOERFNjAyRTVEQjcxMUU0ODU2REMzNkZGOUU2OUQzMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFOERFNjAyRjVEQjcxMUU0ODU2REMzNkZGOUU2OUQzMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhTWU2QAAADRSURBVHjaYvyfb8uABESAuAiIfYBYDSp2A4g3AfEkIH4DU8iIpDEYiOcCMT8DdvAJiJOAeC2Iw4SkaTUeTSDAB1UTDNMoCsTzQLajKJtwCIJRASNUrRhIYy7UNGIBSG0BSKMfA+nAB6RRgwyN6kwM5IFfLNB40seQKrDDp/EeEzRyMQH2UIWBrSCNU6CRSywAqZ0AcuoraIpYjRKX2J36H6r2FSxwQMkoDIg/47EJJBeKnuRAYA0QKwFxOxBfAeLfQPwViM8DcQtUbi1MMUCAAQBgriw0RAfMMAAAAABJRU5ErkJggg==);
+  width: 14px;
+  height: 14px;
+  margin: -1px 5px 0 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*注册底部*/
+.reg-footer {
+  width: 100%;
+  height: 88px;
+  text-align: center;
+}
+.reg-footer a {
+  text-decoration: none;
+}
+.reg-footer a:nth-of-type(1) {
+  color: #333;
+}
+.reg-footer a:nth-of-type(2) {
+  color: #757575;
+}
+
+.foot-top {
+  width: 854px;
+  margin: 0 auto;
+  text-align: center;
+}
+.foot-top ul {
+  position: relative;
+  left: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.foot-top li {
+  list-style: none;
+  float: left;
+  display: inline-block;
+  padding: 0 10px;
+}
+.foot-top li button {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0 5px;
+}
+
+.foot-bot {
+  width: 100%;
+}
+
+/*# sourceMappingURL=login.css.map */
